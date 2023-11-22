@@ -1,174 +1,215 @@
-<!--This webpage template was created by : Vishal Reddy, Dec-12, 2022-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>The Ice Blending
-  </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/styles.css">
-  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="javascript_files/form_validate.js"></script>
-  <script src="jquery.validate.min.js"></script>
-	<script src="additional-methods.min.js"></script>
-  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+  
 </head>
-
 <body>
-  <div id="container">
-    <!--Use the header area for website name and logo-->
-    <header>
-      <a href="index.html">
+
+
+  <!-- Navigation Bar-->
+  <div class="container ">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
+      <!--
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Simple header</span>
+      </a>
+    -->
+      <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <img src="images/ffc_logo.png" alt="Forward Fitness Club" class="rotate linear infinite">
       </a>
-    </header>
-    <!--Use the nav area to add hyperlinks to other pages within the website-->
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html"> Home
-          </a>
-        </li>
-        <li>
-          <a href="about.html">About Us
-          </a>
-        </li>
-        <li>
-          <a href="training.html">Training
-          </a>
-        </li>
-        <li>
-          <a href="specials.html">Specials
-          </a>
-        </li>
-        <li>
-          <a href="team.html">Team
-          </a>
-        </li>
-        <li>
-          <a href="media.html">Media
-          </a>
-        </li>
-        <li>
-          <a href="contact.html">Contact Us
-          </a>
-        </li>
-      </ul>
-      <select id="select" onchange="window.open(this.options[this.selectedIndex].value);">
-        <option>Reports</option>
-        <option value="report_1.html">Products</option>
-        <option value="report_2.html">Orders</option>
-        <option value="report_3.html">Order Totals</option>
-        <option value="report_4.html">Inventory</option>
-</select>
-    </nav>
-    <!--Use the main area to add main content of the webpage-->
-    <main>
-      <h2>Contact Us</h2>
-
-      <h2>To order our latest product please follow the procedures</h2>
-      <!--  
-      <form method="get" name="contact_form" id="contact_form">
-        
-
-        <label for="fName">First Name:</label>
-        <input type="text" name="fName" id="fName"><br>
-
-        <label for="lName">Last Name:</label>
-        <input type="text" name="lName" id="lName"><br>
-
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email"><br>
-
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone"><br>
-
-
-        <p>What are the premium features that you are opting for</p>
-        
-        <ul>
-          <li><input type="checkbox" name="grpfit" id="grpfit" value="grpfit" class="chkbx">Speed Control</li>
-          <li><input type="checkbox" name="prtrain" id="prtrain" value="prtrain" class="chkbx">LCD Screen</li>
-          <li><input type="checkbox" name="nutr" id="nutr" value="nutr" class="chkbx">Design</li>
-        </ul><br>
-
-        <div class="dec-bottom-margin">
-          <label for="reference">Model Type:</label>
-          <select name="reference" id="reference">
-            <option value="ad">IC_1 320k</option>
-            <option value="friend">IC_1 420k</option>
-            <option value="google">IC_2 320k</option>
-            <option value="social">IC_2 420k</option>
-            <option value="other">IC_3 420k</option>
-          </select><br>
-        </div>
-
-        <label for="questions">Comments</label>
-        <textarea id="questions" name="questions" rows="3" cols="25"></textarea><br>
-
-        <input type="submit" id="submit" value="Submit" class="btn"><br>
-        <input type="reset" id="reset" value="Reset Form" class="btn"><br>
-      </form>
-
-    -->
-    <form action="submit_form.html" method="get"
-    name="contact_form" id="contact_form">
-
-    
-      <h3><legend>Contact Information</legend></h3>
-      <label for="name">First Name:</label>
-    <input type="text" name="fname" id="fname"><br>
-    <label for="name">Last Name:</label>
-    <input type="text" name="lname" id="lname"><br>
-    <label for="dob">DOB:</label>
-        <input type="text" name="dob" id="dob" ><br>
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email"><br>
-    
-  <br>
-
-    <h3><legend>Premium Features</legend></h3>
-        
-        <label>Premium Controls:</label>
-        <select name="Controls" id="Controls">
-          <option value="0">Speed Control</option>
-          <option value="1">LCD Screen</option>
-          <option value="2">Design</option>
-        </select><br>
-        <label>Model:</label>
-        <select name="Model" id="Model">
-          <option value="0">IC_1 320k</option>
-          <option value="1">IC_1 420k</option>
-          <option value="2">IC_2 320k</option>
-          <option value="3">IC_2 420k</option>
-          <option value="4">IC_3 520k</option>        		        		        		
-        </select><br>        	
   
-  <input type="submit" id="submit" value="Submit Request" ><br>
-
-</form>
-      <p>If you face any issues while ordering the product please contact through below sources
-      </p>
-      <p>Phone Number</p>
-      <p> <a class="mobile" href="tel:8145559608">(814) 555-9608
-        </a>
-        <span class="desktop">(814) 555-9608
-        </span>
-      </p>
-      <p>Email Address
-      </p>
-      <p> <a href="mailto:queries@theiceblending.com" class="contact">queries@theiceblending.com</a></p>
-    </main>
-    <!--Use the footer area to add to add webpage footer content-->
-    <footer>
-      <aside class="footer_1">
-      &copy; Copyright 2099. All Rights Reserved.<br> 
-      <a href="mailto:general@theiceblending.com">Requestinformation</a><br>
-  Vishal Reddy &nbsp; &nbsp; c0869346<br>
-  </aside>
-</footer>
+      <ul class="nav nav-pills" >
+        <li class="nav-item"><a href="./index.html" class="nav-link text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="./about.html" class="nav-link text-body-secondary">About</a></li>
+        <li class="nav-item"><a href="./training.html" class="nav-link text-body-secondary">Training</a></li>
+        <li class="nav-item"><a href="./specials.html" class="nav-link text-body-secondary">Specials</a></li>
+        <li class="nav-item"><a href="./media.html" class="nav-link text-body-secondary">Media</a></li>
+        <li class="nav-item"><a href="./contact.html" class="nav-link active bg-dark" aria-current="page">Contact</a></li>
+        <li class="nav-item"><a href="./team.html" class="nav-link text-body-secondary">Team</a></li>
+        
+      </ul>
+    </header>
   </div>
-</body>
 
+
+
+
+
+  <!--COntact-->
+
+  <div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <h2>Contact form</h2>
+        <p class="lead">Fill the below details and submit your quries regarding the products</p>
+      </div>
+  
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Our Top Products</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Blend 200</h6>
+                <small class="text-body-secondary">2006 edition</small>
+              </div>
+              <span class="text-body-secondary">80$</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Blend 400 Hydro</h6>
+                <small class="text-body-secondary">2008 edition</small>
+              </div>
+              <span class="text-body-secondary">120$</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Blend 600</h6>
+                <small class="text-body-secondary">2014 edition</small>
+              </div>
+              <span class="text-body-secondary">180$</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+              <div class="text-success">
+                <h6 class="my-0"> Custom Products</h6>
+                <small>Customise you product</small>
+              </div>
+              <span class="text-success"></span>
+            </li>
+          </ul>
+  
+          
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Contact Info</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="username" class="form-label">Email</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" id="username" placeholder="you@example.com" required="">
+                <div class="invalid-feedback">
+                    Your Email is required.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-5">
+                <label for="country" class="form-label">Model</label>
+                <select class="form-select" id="country" required="">
+                  <option value="">Choose...</option>
+                  <option>Blend 200</option>
+                  <option>Blend 200 Hydo</option>
+                  <option>Blend 400</option>
+                  <option>Blend 400 Hydro</option>
+                  <option>Blend 600</option>
+                  <option>Blend 600 Hydro</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid Model.
+                </div>
+              </div>
+              
+              <h4 class="mb-3">Premium Features</h4>
+  
+            <div class="my-3">
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                <label class="form-check-label" for="credit">Speed Control</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="debit">LCD Screen</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="paypal">Design</label>
+              </div>
+            </div>
+
+  
+              <div class="col-12 ">
+                <label for="address" class="form-label">Comments</label>
+                <input type="text" class="form-control" id="address" placeholder="Please write your comments" required="">
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+    
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">Recieve latest deals and offers</label>
+            </div>
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="save-info">
+              <label class="form-check-label" for="save-info">Recieve latest product walkthroughs</label>
+            </div>
+  
+            <hr class="my-4">
+  
+            
+  
+  
+  
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  
+    
+  </div>
+
+
+
+  <!--Footer-->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">© 2023 The Ice Blending, Inc</p>
+  
+      <a href="./index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"">
+        <img src="images/ffc_logo.png" alt="Forward Fitness Club" class="rotate linear infinite">
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+        <li class="nav-item"><a href="./training.html" class="nav-link px-2 text-body-secondary">Training</a></li>
+        <li class="nav-item"><a href="./specials.html" class="nav-link px-2 text-body-secondary">Specials</a></li>
+        <li class="nav-item"><a href="./media.html" class="nav-link px-2 text-body-secondary">Media</a></li>
+        <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+        <li class="nav-item"><a href="./team.html" class="nav-link px-2 text-body-secondary">Team</a></li>
+      </ul>
+    </footer>
+  </div>
+  
+</body>
 </html>
